@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class HomePage extends StatelessWidget {
   final String Username;
 
-  HomePage({required this.Username});
+  const HomePage({super.key, required this.Username});
 
   @override
   Widget build(BuildContext context) {
@@ -67,52 +67,19 @@ class HomePage extends StatelessWidget {
                     ),
                     SizedBox(height: 8),
                     Text(
-                      '', // Ganti dengan nama kalian coy
+                      'WahyuLak',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 30),
-              // Menu Grid
-              const Text(
-                'Quick Menu',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Color(0xFF4E7D96),
-                ),
-              ),
-              const SizedBox(height: 20),
-              Expanded(
-                child: GridView.count(
-                  crossAxisCount: 2,
-                  crossAxisSpacing: 20,
-                  mainAxisSpacing: 20,
-                  children: [
-                    _buildMenuCard(
-                      icon: Icons.person,
-                      title: 'Profile',
-                      onTap: () {},
-                    ),
-                    _buildMenuCard(
-                      icon: Icons.settings,
-                      title: 'Settings',
-                      onTap: () {},
-                    ),
-                    _buildMenuCard(
-                      icon: Icons.notifications,
-                      title: 'Notifications',
-                      onTap: () {},
-                    ),
-                    _buildMenuCard(
-                      icon: Icons.help,
-                      title: 'Help',
-                      onTap: () {},
+                    Text(
+                      'WahyuLak@example.com',
+                      style: TextStyle(
+                        color: Colors.white70,
+                        fontSize: 16,
+                      ),
                     ),
                   ],
                 ),
